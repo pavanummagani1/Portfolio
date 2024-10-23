@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*Laptop*/
+header{
+    background-color: black;
+    height: 60px;
+    box-shadow: 10px 10px 10px #fff;
+
+}
+nav{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    padding: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 16px;
+}
+.hamburger{
+    display: none;
+}
+
+main{
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    width: 100vw;
+    height: 100vh;
+}
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.About{
+    /* border: 2px solid #fff; */
+    width: 350px;
+    color: #fff;
+    font-size: 1.5em;
+}
+.title{
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.profilephoto{
+    width: 300px;
+    margin: 100px;
+}
+img{
+    width: 100%;
+    border-radius: 40%;
+}
+
+/* Tablets */
+@media screen and (width>=480px) and (width<=768px) {
+    nav{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+
+
+/* Mobile Phones */
+@media screen and (width<480px) {
+    main{
+        background: linear-gradient(to bottom, #434343 0%, black 100%);
+        width: 100vw;
+        height: 100vh;
+    }
+    .hamburger{
+        display: block;
+    }
+    .navitems{
+        display: none;
+    }
+    .about-container{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .About, .profilephoto{
+        margin:0px 20px 20px 20px;
+        text-align: center;
+    }
+}
