@@ -8,6 +8,8 @@ header{
     background-color: black;
     height: 60px;
     box-shadow: 10px 10px 10px #fff;
+    position: sticky;
+    top: 0px;
 
 }
 nav{
